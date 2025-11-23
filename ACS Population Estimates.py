@@ -1,25 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov 10 20:41:42 2025
-
-@author: corinamccullough
-"""
-
-# https://pygis.io/docs/d_access_census.html
-# Variables list: https://api.census.gov/data/2020/acs/acs5/variables.html
-# https://censusdis.readthedocs.io/en/1.1.3/intro.html
-
 import pandas as pd
 from census import Census
 import time
 import numpy as np
 
+# You can request Census API key here: https://api.census.gov/data/key_signup.html
 
-api_key = "041f118e070667dea491978da5e7c2bedb842535"
+api_key = "CENSUS API KEY"
 c = Census(api_key)
-
-# 2024 Data will release December 11, 2025
 
 # Extract 2023 5-year population estimates
 year = 2023
